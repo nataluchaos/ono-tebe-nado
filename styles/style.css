@@ -1,0 +1,39 @@
+/* Начало шапки страницы */
+
+.header{
+    border: 1px solid red;
+    min-height: 293px;
+}
+
+.hesder__menu{
+    font-size: 21px;
+}
+
+/* Начало контента страницы*/
+
+.content{
+    border: 1px solid blue;
+}
+
+.cover{
+    border: 1px solid red;
+    min-height: 757px;
+}
+
+.lots{
+    border: 1px solid red;
+    min-height: 1023px;
+    padding: 180px 24px 120px;
+}
+
+.about{
+    border: 1px solid red;
+    min-height: 775px;
+    padding: 0px 24px 180px;    
+}
+
+/* Начало подвала страницы */
+.footer{
+    border: 1px solid red;
+    min-height: 180px;
+}
