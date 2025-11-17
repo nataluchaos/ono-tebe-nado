@@ -26,8 +26,8 @@
 }
 
 .header__link {
-    text-decoration: none;             /*убрать стандартное подчеркивание*/
-    border-bottom: 1px solid #000;   /*добавить подчеркивание для ссылки*/
+    text-decoration: none;             /* убрать стандартное подчеркивание */
+    border-bottom: 1px solid #000;   /* добавить подчеркивание для ссылки */
     margin-left: -5px;
     padding-right: 1px;
 }
@@ -59,8 +59,8 @@
 }
 
 .address__email_link {
-    text-decoration: none;            /*убрать стандартное подчеркивание*/
-    border-bottom: 1px solid #000;  /*добавить подчеркивание для ссылки*/
+    text-decoration: none;            /* убрать стандартное подчеркивание */
+    border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
 }
 
 /* Конец шапки страницы */
@@ -167,6 +167,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;      /* Смещение карточек на другую строку */
     gap: 25px;
     padding-bottom: 30px;
 }
@@ -228,14 +229,55 @@
     font-size: 20px;
     color: #000;
     margin-left: 40px;
-    text-decoration: none;            /*убрать стандартное подчеркивание*/
-    border-bottom: 1px solid #000;  /*добавить подчеркивание для ссылки*/
+    text-decoration: none;            /* убрать стандартное подчеркивание */
+    border-bottom: 1px solid #000;  /* добавить подчеркивание для ссылки */
 }
 
 .about {
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 334px auto;
+    gap: 24px;
     min-height: 775px;
-    padding: 0px 24px 180px;    
+    padding: 0px 26px 180px;    
+}
+
+.about__column {
+    padding-top: 34px;
+    padding-left: 45px;
+}
+
+.about__logo {
+    background-color: #000;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;  /* Круглый блок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__title {
+    padding-top: 135px;
+    padding-bottom: 100px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
 }
 
 /* Конец контента страницы*/
