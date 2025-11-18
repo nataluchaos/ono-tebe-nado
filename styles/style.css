@@ -16,13 +16,19 @@
 .header__links-list {
     display: flex;
     gap: 13px;
-    list-style-type: circle;
     list-style-position: inside;
+}
+
+.header__links-list-item_no-bullit{
+    list-style-type: none;
+}
+
+.header__links-list-item{
+    list-style-type: circle;
 }
 
 .header__link_active {
     text-decoration: none;
-    list-style-type: none;
 }
 
 .header__link {
